@@ -2,9 +2,9 @@
 require "filter.php";
 
 $test_message = 'This is a test message for HP';
-$recipient = "$new_email";
+$recipient = "cruzjurgen97@gmail.com";
 $subject = "Contact Form feedback";
-$mailheader = "From: $new_email . \r\n";
+$mailheader = "From: cruzjurgen97@gmail.com . \r\n";
 
 mail($recipient, $subject, $test_message, $mailheader);
 
