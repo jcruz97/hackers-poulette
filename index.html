@@ -46,31 +46,31 @@
                 <div class="form-group">
                     <div class="col-sm-12">
                         <label for="male" class="mr-3">
-                            <input type="radio" class="mr-1" id="male" name="gender" value="male" selected required>Male
+                            <input type="radio" class="mr-1" id="male" name="genderChoice" value="male" selected required>Male
                         </label>
 
                         <label for="female" class="mr-3">
-                            <input type="radio" class="mr-1" id="female" name="gender" value="female" required>Female
+                            <input type="radio" class="mr-1" id="female" name="genderChoice" value="female" required>Female
                         </label>
                         
                         <label for="other" class="mr-3">
-                            <input type="radio" class="mr-1" id="other" name="gender" value="other" required>Other
+                            <input type="radio" class="mr-1" id="other" name="genderChoice" value="other" required>Other
                         </label>
                       
                         <label for="noAnswer" class="mr-3">
-                            <input type="radio" class="mr-1" id="noAnswer" name="gender" value="noAnswer" required>I don't want to answer
+                            <input type="radio" class="mr-1" id="noAnswer" name="genderChoice" value="noAnswer" required>I don't want to answer
                         </label>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Place a valid email please" required>
+                    <input type="text" class="form-control" name="email" id="emailAdress" placeholder="Place a valid email please" required>
                 </div>
 
                 <div class="form-group">
                     <label for="occupation">Occupation</label>
-                    <select class="form-control" name="occupation" required>
+                    <select class="form-control" name="occupationTask" required>
                       <option value="actualCustomer">Customer</option>
                       <option value="futureCustomer">Future customer</option>
                       <option value="partner">Partner</option>
@@ -82,7 +82,7 @@
 
                 <div class="form-group">
                     <label for="country">Country</label>
-                    <select class="form-control" name="country" required>
+                    <select class="form-control" name="countryName" required>
                       <option value="belgium">Belgium</option>
                       <option value="france">France</option>
                       <option value="uk">United-Kingdom</option>
@@ -102,7 +102,7 @@
 
                 <div class="form-group">
                     <label for="subject">Subject</label>
-                    <select class="form-control" name="subject">
+                    <select class="form-control" name="subjectChoice">
                       <option value="other" selected>Other (if you don't know where to put your query)</option>
                       <option value="delivery">Delivery</option>
                       <option value="site">Website issue</option>
@@ -114,12 +114,27 @@
 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" name="message" placeholder="Please write your query here" style="height:200px" rows="5"required></textarea>
+                    <textarea class="form-control" name="messageAreaText" placeholder="Please write your query here" style="height:200px" rows="5"required></textarea>
                 </div>
 
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Send</button>
                 </div>
+
+                <label class="honeypot" for="firstname"></label>
+                <input class="honeypot" autocomplete="off" type="text" id="firstname" name="firstname" placeholder="Your firstname here">
+                <label class="honeypot" for="email"></label>
+                <input class="honeypot" autocomplete="off" type="email" id="email" name="email" placeholder="Your e-mail here">
+                <label class="honeypot" for="lastname"></label>
+                <input class="honeypot" autocomplete="off" type="text" id="lastname" name="lastname" placeholder="Your lastname here">
+                <label class="honeypot" for="gender"></label>
+                <input class="honeypot" autocomplete="off" type="radio" id="gender" name="gender" placeholder="Your gender here">
+                <label class="honeypot" for="country"></label>
+                <select class="honeypot" autocomplete="off" type="text" id="country" name="country" placeholder="Your country here"></select>
+                <label class="honeypot" for="occupation"></label>
+                <select class="honeypot" autocomplete="off" type="text" id="occupation" name="occupation" placeholder="Your occupation here"></select>
+                <label class="honeypot" for="message"></label>
+                <textarea class="honeypot" autocomplete="off" type="text" id="message" name="message" placeholder="Your message here"></textarea>
 
                </form>
              </div>
