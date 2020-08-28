@@ -6,6 +6,7 @@ $lastname = $_POST['lName'];
 $new_lastname = filter_var($lastname, FILTER_SANITIZE_STRING);
 
 $gender = $_POST['gender'];
+$new_gender = filter_var($gender, FILTER_SANITIZE_STRING);
 
 $email = $_POST['email']; //Sanitizing and validate email
 $new_email = filter_var($email, FILTER_SANITIZE_EMAIL);
@@ -26,6 +27,8 @@ $subject = $_POST['subject'];
 $new_subject = filter_var($subject, FILTER_SANITIZE_STRING);
 
 $message = $_POST['message'];
+$new_massage = strip_tags($message);
+$clean_message = htmlentities($new_message, ENT_QUOTES, 'UTF-8');
 
 
 if (count($errors)> 0){

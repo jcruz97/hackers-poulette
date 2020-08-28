@@ -1,7 +1,7 @@
 <?php
 require "filter.php";
 
-$formcontent="From: $new_firstname + $new_lastname \n Message: $message";
+$formcontent="From: $new_firstname + $new_lastname \n Message: $clean_message";
 $recipient = "$new_email";
 $subject = "Contact Form feedback";
 $mailheader = "From: $new_email \r\n";
