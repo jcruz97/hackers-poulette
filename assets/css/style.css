@@ -1,6 +1,11 @@
+@font-face {
+    font-family: bellotaRegular;
+    src: url(../fonts/Bellota-Regular.otf);
+    font-display: swap;
+}
 
 body {
-    font-family: 'MyWebFont', Arial, sans-serif;
+    font-family: bellotaRegular;
     background-color: #0d8187;
     color: #FFF;
 }
