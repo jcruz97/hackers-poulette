@@ -1,3 +1,29 @@
+
 body {
-    font-family:
+    background-color: #0d8187;
+    color: #FFF;
+}
+
+.contact-form .btn-primary, .contact-form .btn-primary:active {
+    color: #FFF;
+    background: #303030 !important;
+    border: none;
+}
+
+.contact-form h2 {
+    font-size: 2.75em;
+    text-align: center;
+}
+
+.howto {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.foot-gap {
+    margin-top: 10em;
 }

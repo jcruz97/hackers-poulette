@@ -7,23 +7,24 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--Responsive meta tag-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!--Bootstrap CDN-->
-        <link rel="stylesheet" type="css" href="assets/css/style.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="/assets/css/style.css">
         
     </head>
 
     <body>
 
         <div class="container">
-          
+          <img src="/assets/images/hackers-poulette-logo.png" alt="hackers-poulette logo">
         </div>
 
         <div class="container-lg">
           <div class="row">
             <div class="col-md-8 mx-auto">
-            <div class="contact-form">
-            <h2>Want to contact us?</h2>    
-            <p>Please complete all fields for the query to be processed</p>
-            <form action="contact.php" method="POST">
+             <div class="contact-form">
+               <h2>Want to contact us?</h2>    
+               <p class="howto">Please complete all fields for the query to be processed</p>
+               <form action="filter.php" method="POST">
 
                 <div class="row">
                     <div class="col-sm-6">
@@ -119,11 +120,13 @@
                     <button type="submit" class="btn btn-primary">Send</button>
                 </div>
 
-            </form>
-            </div>
+               </form>
+             </div>
             </div>
           </div>
         </div>
+
+        <div class="foot-gap"></div>
 
     </body>
 </html>
