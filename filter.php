@@ -30,7 +30,13 @@ $message = $_POST['message'];
 $new_message = strip_tags($message);
 $clean_message = htmlentities($new_message, ENT_QUOTES, 'UTF-8');
 
-print_r($new_firstname, $new_lastname, $new_message, $new_occupation, $new_subject, $new_gender);
+print_r($new_firstname);
+print_r($new_lastname);
+print_r($new_gender);
+print_r($new_occupation);
+print_r($new_subject);
+print_r($new_message);
+
 
 if (count($errors)> 0){
 	echo "There are mistakes!";
