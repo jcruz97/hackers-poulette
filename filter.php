@@ -27,9 +27,10 @@ $subject = $_POST['subject'];
 $new_subject = filter_var($subject, FILTER_SANITIZE_STRING);
 
 $message = $_POST['message'];
-$new_massage = strip_tags($message);
+$new_message = strip_tags($message);
 $clean_message = htmlentities($new_message, ENT_QUOTES, 'UTF-8');
 
+print_r($new_firstname, $new_lastname, $new_message, $new_occupation, $new_subject, $new_gender);
 
 if (count($errors)> 0){
 	echo "There are mistakes!";
