@@ -9,9 +9,7 @@ Contact form for 'hackers-poulette' company, using php to process data in differ
 Useful links
 ------------
 
-*__Real-website__* : 
-
-*__My-version__* : 
+*__Website__* : https://hackers-poulette-website.herokuapp.com/
 
 
 Date
