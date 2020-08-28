@@ -11,8 +11,8 @@ $new_gender = filter_var($gender, FILTER_SANITIZE_STRING);
 $email = $_POST['email']; //Sanitizing and validate email
 $new_email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-    print_r(new_email);
+if (filter_var($new_email, FILTER_VALIDATE_EMAIL) === true){
+    print_r($new_email);
 } else {
     $errors['new_email'] = 'Email is not valid!';
 }
