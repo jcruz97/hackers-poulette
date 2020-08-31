@@ -1,10 +1,10 @@
 <?php
 include 'mailer.php';
 
-$firstname = $_POST['fName'];
+$firstname = $_POST['firstName'];
 $new_firstname = filter_var($firstname, FILTER_SANITIZE_STRING);
 
-$lastname = $_POST['lName'];
+$lastname = $_POST['lastName'];
 $new_lastname = filter_var($lastname, FILTER_SANITIZE_STRING);
 
 $gender = $_POST['genderChoice'];
