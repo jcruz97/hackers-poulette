@@ -33,10 +33,17 @@ $new_message = strip_tags($message);
 $clean_message = htmlentities($new_message, ENT_QUOTES, 'UTF-8');
 
 print_r($new_firstname);
+echo '<br/>';
 print_r($new_lastname);
+echo '<br/>';
 print_r($new_gender);
+echo '<br/>';
+print_r($new_country);
+echo '<br/>';
 print_r($new_occupation);
+echo '<br/>';
 print_r($new_subject);
+echo '<br/>';
 print_r($new_message);
 
 
