@@ -21,8 +21,8 @@ $mail->Port = 2525;
 
 //Actual content of the mail
 $mail->setFrom('info@mailtrap.io', 'Mailtrap');
-$mail->addReplyTo('info@mailtrap.io', 'Mailtrap');
-$mail->addAddress('recipient1@mailtrap.io', 'Tim'); 
+$mail->addAddress('simple-3a3a57@inbox.mailtrap.io', 'Tim');
+
 $mail->Subject = 'Test Email via Mailtrap SMTP using PHPMailer';
 $mail->isHTML(true);
 $mailContent = "<h1>Send HTML Email using SMTP in PHP</h1>
