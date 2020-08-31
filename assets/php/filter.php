@@ -1,6 +1,4 @@
 <?php
-include 'mailer.php';
-
 $firstname = $_POST['firstName'];
 $new_firstname = filter_var($firstname, FILTER_SANITIZE_STRING);
 
@@ -32,24 +30,30 @@ $message = $_POST['messageAreaText'];
 $new_message = strip_tags($message);
 $clean_message = htmlentities($new_message, ENT_QUOTES, 'UTF-8');
 
-print_r($new_firstname);
-echo '<br/>';
-print_r($new_lastname);
-echo '<br/>';
-print_r($new_gender);
-echo '<br/>';
-print_r($new_country);
-echo '<br/>';
-print_r($new_occupation);
-echo '<br/>';
-print_r($new_subject);
-echo '<br/>';
-print_r($new_message);
 
+/* This block is used to check if all values are correctly retrieved from the form to be used.
+
+*echo '<br/>';
+*print_r($new_firstname);
+*echo '<br/>';
+*print_r($new_lastname);
+*echo '<br/>';
+*print_r($new_gender);
+*echo '<br/>';
+*print_r($new_country);
+*echo '<br/>';
+*print_r($new_occupation);
+*echo '<br/>';
+*print_r($new_subject);
+*echo '<br/>';
+*print_r($new_message);
+*/
 
 if (count($errors)> 0){
 	echo "There are mistakes!";
 	print_r($errors);
 	exit;
 }
+
+include 'mailer.php';
 ?>
