@@ -1,5 +1,5 @@
 <?php
-require "filter.php";
+include "filter.php";
 
 $test_message = 'This is a test message for HP';
 $recipient = "cruzjurgen97@gmail.com";
