@@ -24,7 +24,7 @@
              <div class="contact-form">
                <h2>Want to contact us?</h2>   
                <p class="howto">Please complete all fields for your query to be processed</p>
-               <form action="mailer.php" method="POST">
+               <form action="./assets/php/mailer.php" method="POST">
 
                 <div class="row">
                     <div class="col-sm-6">

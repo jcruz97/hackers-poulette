@@ -1,6 +1,5 @@
 <?php
 
-
 $firstname = $_POST['fName'];
 $new_firstname = filter_var($firstname, FILTER_SANITIZE_STRING);
 
