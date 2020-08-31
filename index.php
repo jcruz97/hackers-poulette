@@ -21,7 +21,6 @@
         <div class="container-lg">
           <div class="row">
             <div class="col-md-8 mx-auto">
-                <?php include './assets/php/filter.php'?>
              <div class="contact-form">
                <h2>Want to contact us?</h2>   
                <p class="howto">Please complete all fields for your query to be processed</p>
